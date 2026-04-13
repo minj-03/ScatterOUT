@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scatterout</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- index.html (inside <head> or before closing </body>) -->
+<script>
+  // small guard so we don't inject the script twice during HMR/dev reloads
+  if (!window._scatterout_maps_script_injected) {
+    const script = document.createElement('script');
+    script.src = "https://maps.googleapis.com/maps/api/js?key=place_holder_key=weekly";
+    script.defer = true;
+    script.async = true;
+    document.head.appendChild(script);
+    window._scatterout_maps_script_injected = true;
+  }
+</script>
+
+  </body>
+</html>
+
+

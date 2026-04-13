@@ -1,0 +1,63 @@
+/* src/styles/landing.css */
+.landing-root {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('/assets/landing.jpeg');
+
+}
+
+.landing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.25); /* dark overlay */
+}
+
+.center-box {
+  text-align: center;
+  color: #fff;
+  padding: 24px;
+  backdrop-filter: blur(2px);
+}
+
+.brand {
+  font-size: 56px;
+  letter-spacing: 6px;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.sign-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sign-btn:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.signed-msg {
+  color: #fff;
+}

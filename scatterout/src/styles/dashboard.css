@@ -1,0 +1,28 @@
+/* src/pages/dashboard.css */
+.alert-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.view-map-btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.open-map-bottom {
+  background: #000;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
